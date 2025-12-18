@@ -1,47 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Random Restaurant Picker</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <main class="app">
-    <h1>St. Louis Restaurant Adventure</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Restaurant Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>St. Louis Restaurant Adventure</h1>
 
-    <!-- Optional filters -->
-    <section class="filters">
-      <label>
-        Cuisine:
-        <select id="cuisineFilter">
-          <option value="any">Any</option>
-          <option value="japanese">Japanese</option>
-          <option value="italian">Italian</option>
-          <option value="mexican">Mexican</option>
-          <!-- add more -->
-        </select>
-      </label>
+      <!-- Optional filters -->
+      <section class="filters">
+        <label>
+          Cuisine:
+          <select id="cuisineFilter">
+            <option value="any">Any</option>
 
-      <label>
-        Price:
-        <select id="priceFilter">
-          <option value="any">Any</option>
-          <option value="$">$</option>
-          <option value="$$">$$</option>
-          <option value="$$$">$$$</option>
-        </select>
-      </label>
-    </section>
+            <option value="afro-caribbean">Afro-Caribbean</option>
+            <option value="bakery">Bakery</option>
+            <option value="balkan">Balkan</option>
+            <option value="bbq">BBQ</option>
+            <option value="bosnian">Bosnian</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="burgers">Burgers</option>
 
-    <button id="pickButton">Pick a restaurant</button>
-    <button id="randomButton">Generate a random restaurant</button>
+            <option value="cajun">Cajun / Creole</option>
+            <option value="chinese">Chinese</option>
+            <option value="contemporary">Contemporary</option>
+            <option value="cuban">Cuban</option>
+            <option value="dessert">Dessert</option>
+            <option value="filipino">Filipino</option>
+            <option value="food-truck">Food Truck</option>
+            <option value="french">French</option>
+            <option value="fried-chicken">Fried Chicken</option>
+            <option value="indian">Indian</option>
+            <option value="italian">Italian</option>
+            <option value="japanese">Japanese</option>
+            <option value="korean">Korean</option>
+            <option value="malaysian">Malaysian</option>
+            <option value="mediterranean">Mediterranean</option>
+            <option value="mexican">Mexican</option>
+            <option value="middle-eastern">Middle Eastern</option>
+            <option value="nigerian">Nigerian</option>
+            <option value="peruvian">Peruvian</option>
+            <option value="pizza">Pizza</option>
+            <option value="polynesian">Polynesian</option>
+            <option value="pub">Pub Fare</option>
+            <option value="ramen">Ramen</option>
+            <option value="sandwiches">Sandwiches</option>
+            <option value="seafood">Seafood</option>
+            <option value="southern">Southern</option>
+            <option value="steakhouse">Steakhouse</option>
+            <option value="thai">Thai</option>
+            <option value="vegan">Vegan / Vegetarian</option>
+            <option value="venezuelan">Venezuelan</option>
+            <option value="vietnamese">Vietnamese</option>
+          </select>
+        </label>
 
-    <section id="result" class="result hidden">
-      <h2 id="resultName"></h2>
-      <p id="resultDetails"></p>
-    </section>
-  </main>
+        <label>
+          Price:
+          <select id="priceFilter">
+            <option value="any">Any</option>
+            <option value="$">$</option>
+            <option value="$$">$$</option>
+            <option value="$$$">$$$</option>
+          </select>
+        </label>
+      </section>
 
-  <script src="restaurantgenerator.js"></script>
-</body>
+      <button id="pickButton">Pick a restaurant</button>
+      <button id="randomButton">Generate a random restaurant</button>
+
+      <section id="result" class="result hidden">
+        <h2 id="resultName"></h2>
+        <p id="resultDetails"></p>
+      </section>
+    </main>
+
+    <script src="restaurantgenerator.js"></script>
+  </body>
 </html>
