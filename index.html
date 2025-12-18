@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Random Restaurant Picker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>St. Louis Restaurant Adventure</h1>
+
+    <!-- Optional filters -->
+    <section class="filters">
+      <label>
+        Cuisine:
+        <select id="cuisineFilter">
+          <option value="any">Any</option>
+          <option value="japanese">Japanese</option>
+          <option value="italian">Italian</option>
+          <option value="mexican">Mexican</option>
+          <!-- add more -->
+        </select>
+      </label>
+
+      <label>
+        Price:
+        <select id="priceFilter">
+          <option value="any">Any</option>
+          <option value="$">$</option>
+          <option value="$$">$$</option>
+          <option value="$$$">$$$</option>
+        </select>
+      </label>
+    </section>
+
+    <button id="pickButton">Pick a restaurant</button>
+    <button id="randomButton">Generate a random restaurant</button>
+
+    <section id="result" class="result hidden">
+      <h2 id="resultName"></h2>
+      <p id="resultDetails"></p>
+    </section>
+  </main>
+
+  <script src="restaurantgenerator.js"></script>
+</body>
+</html>
