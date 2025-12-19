@@ -1,4 +1,3 @@
-# St-Louis-Restaurant-Generator
 # St. Louis Restaurant Adventure
 
 A mobile-first, game show aesthetic web app that helps users choose a restaurant in St. Louis by filtering cuisine and budget or by throwing it up to the hands of fate and hitting the random restaurant generator button.
