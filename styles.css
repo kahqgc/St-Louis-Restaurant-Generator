@@ -1,11 +1,6 @@
-/* ---------------------------
-  Nickelodeon Game Show Vibes
-  Mobile-first, centered prompt
----------------------------- */
-
 :root{
-  --bg: #19d3ff;        /* bright sky/cyan */
-  --ink: #121212;       /* almost-black */
+  --bg: #19d3ff;        /* sky/cyan */
+  --ink: #121212;       /* black */
   --card: #fff7d6;      /* warm cream */
   --accent: #ff5aa5;    /* hot pink */
   --accent2: #b6ff2a;   /* slime green */
@@ -193,20 +188,28 @@ button:focus{
   display: none;
 }
 
-/* Slightly nicer layout on bigger screens (still “phone-ish”) */
-@media (min-width: 520px){
-  .app{
-    min-height: 620px;
-    padding: 22px 20px 24px;
-    gap: 16px;
+/* PHONE MODE: make the app be the whole screen */
+@media (max-width: 520px) {
+  body {
+    background: var(--card);   /* no fancy background */
+    display: block;            /* stop grid centering */
+    padding: 0;                /* no outer padding */
   }
-  .filters{
-    grid-template-columns: 1fr 1fr;
-    align-items: end;
-  }
-}
 
-/* Reduce motion for accessibility */
-@media (prefers-reduced-motion: reduce){
-  button{ transition: none; }
+  .app {
+    max-width: none;
+    width: 100vw;
+    min-height: 100vh;         /* fill the phone */
+    border-radius: 0;          /* no rounded corners */
+    box-shadow: none;          /* no floating card */
+    border: 0;                 /* optional: remove thick outline */
+    padding: 18px 16px 22px;   /* keep inner padding */
+    justify-content: flex-start; /* more natural scrolling */
+  }
+
+  /* optional: remove splatter shapes on mobile */
+  .app::before,
+  .app::after {
+    display: none;
+  }
 }
